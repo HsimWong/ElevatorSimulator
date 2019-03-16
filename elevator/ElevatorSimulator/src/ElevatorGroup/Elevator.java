@@ -1,4 +1,6 @@
-package Cabin;
+package ElevatorGroup;
+
+import Cabin.Carriage;
 
 public class Elevator {
 	private Carriage[] carriageArray;
@@ -7,7 +9,7 @@ public class Elevator {
 	public Elevator(int storyNum, int carriageNum) {
 		this.storyNum = storyNum;
 		for (int i = 0; i < carriageNum; i++) {
-			carriageArray[i] = new Carriage(storyNum);
+//			carriageArray[i] = new Carriage(storyNum);
 		}
 	}
 	
