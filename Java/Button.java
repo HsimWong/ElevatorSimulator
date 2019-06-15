@@ -1,5 +1,9 @@
 import java.util.*;
-
+/*
+ * The index of floor starts from 0
+ * under any circumstance, exept for
+ * displaying.
+ */
 class Button {
     private boolean pressDownStatus;
     private int     floorValue;
@@ -22,7 +26,7 @@ class Button {
     }
 
     public String toString() {
-        String ret = "The button on floor " + this.floorValue; 
+        String ret = "The button on floor " + (this.floorValue + 1); 
         String status = pressDownStatus ? " is pressed down" : " is not requested";
         return (ret + status + "\n");
     }
