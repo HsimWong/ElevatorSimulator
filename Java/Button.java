@@ -6,15 +6,19 @@ import java.util.*;
  */
 class Button {
     private boolean pressDownStatus;
-    private int     floorValue;
+    private int     cabinIndex;
 
-    public Button(int floorValue) {
-		this.floorValue = floorValue;
-        this.pressDownStatus = false;
+    public Button(int cabinIndex) {
+        this.cabinIndex = cabinIndex;
+		this.pressDownStatus = false;
     }
 
     protected boolean getStatus() {
         return this.pressDownStatus;
+    }
+
+    protected int getCabinIdx() {
+        return this.cabinIndex;
     }
 
     protected void pressButton() {
@@ -25,19 +29,8 @@ class Button {
         this.pressDownStatus = false;
     }
 
-    public String toString() {
-        String ret = "The button on floor " + (this.floorValue + 1); 
-        String status = pressDownStatus ? " is pressed down" : " is not requested";
-        return (ret + status + "\n");
+    @Override
+    public String toString(){
+        return "hahahhaha";
     }
-
-    public static void main(String[] args) {
-        Button a = new Button(2);
-        System.out.print(a);
-        a.pressButton();
-        System.out.print(a);  
-        a.respondTheButton();
-        System.out.print(a);
-    }
-
 }

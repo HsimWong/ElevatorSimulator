@@ -11,18 +11,20 @@ import java.lang.Thread;
 class Cabin {
     private int maxFloor;
     private int timeLag;
-    private Button[] buttons;
+    private int cabinIndex;
+    private CabinButton[] buttons;
     private int dir;
     private int curFloor; 
 
-    public Cabin(int maxFloor) {
+    public Cabin(int maxFloor, cabinIndex) {
         this.timeLag = 5;
         this.maxFloor = maxFloor;
+        this.cabinIndex = cabinIndex;
         this.dir = 1;
         this.curFloor = 0;
-        this.buttons = new Button[maxFloor];
+        this.buttons = new CabinButton[maxFloor];
         for (int i = 0; i < maxFloor; i++ ) {
-            buttons[i] = new Button(i);
+            buttons[i] = new CabinButton(i, cabinIndex);
         }
     }
 
