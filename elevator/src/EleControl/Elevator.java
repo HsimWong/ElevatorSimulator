@@ -20,6 +20,9 @@ class Elevator {
      }  
      this.requests = new LinkedList<int []>();      
  }
+ public int getCabinNum() {
+	 return this.cabinNum;
+ }
 
  public void makeRequest(int from, int toFloor) {
      int[] request = new int [2];
@@ -28,10 +31,10 @@ class Elevator {
  }
 
  
- public void 
+// public void 
  
  public static void main(String[] args) {
-     Elevator a = new Elevator(4, 5);
+//     Elevator a = new Elevator(4, 5);
      
  }
 
