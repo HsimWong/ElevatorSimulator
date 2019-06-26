@@ -123,22 +123,19 @@ class Cabin {
 //    }
 
     public void doRequest(Request rq) {
+    	/* Remove duplicate requests */
     	if (rq.status == INREQ) {
-    		Iterator<Request> tempIter = this.upRqs.iterator();
+    		PriorityQueue<Request> rmQ = (rq.direction == UP) ? this.downRqs : this.upRqs;
+    		Iterator<Request> tempIter = rmQ.iterator();
     		while (tempIter.hasNext()) {
     			Request next = tempIter.next();
     			if (next.requestID == rq.requestID) {
     				upRqs.remove(next);
-    			}
-    		}
-    		tempIter = this.downRqs.iterator();
-    		while (tempIter.hasNext()) {
-    			Request next = tempIter.next();
-    			if (next.requestID == rq.requestID) {
-    				downRqs.remove(next);
+    				break;
     			}
     		}
     	}
+    	
     	
     }
     
@@ -204,21 +201,16 @@ class Cabin {
         // this.outPanels[floorIndex].respondRequest();
     }
     
-    
-    public void respondeRequest(Request rq) {
-    	
-    }
-
     public void requestFloorFromInside(int floorIndex) {
 //    	if ()
     	if ((!this.buttons[floorIndex].getStatus())
     			|| !(this.curFloor == floorIndex)) {
 	    	int ID = fetchRqID();
 	        this.buttons[floorIndex].pressButton();
-	        Request downrequest = new Request(floorIndex, INREQ, DOWN, ID);
-	        Request uprequest = new Request(floorIndex, INREQ, UP, ID);
-	        this.upRqs.add(uprequest);
-	        this.downRqs.add(downrequest);        
+	        int rqDir = (floorIndex > this.curFloor) ? UP : DOWN;
+	        PriorityQueue<Request> Q2bInserted = (floorIndex > this.curFloor) ? this.upRqs : this.downRqs;
+	        Request request = new Request(floorIndex, INREQ, rqDir, ID);
+	        Q2bInserted.add(request);	        
     	}
     }
     
