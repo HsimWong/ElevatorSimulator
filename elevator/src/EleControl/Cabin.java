@@ -21,26 +21,24 @@ class Cabin {
 	public static final int INREQ = 0;
 	public static final int OUTREQ = 1;
 	public static IntRef rqIDcount = new IntRef();
-	
 	public synchronized static int fetchRqID() {
-		int ret = rqIDcount.value;
-		rqIDcount.value ++;
+		int ret = Cabin.rqIDcount.value;
+		Cabin.rqIDcount.value++;
 		return ret;
 	}
-	
-    private int maxFloor;
-//    private int timeLag;
+	private int maxFloor;
+
     private int cabinIndex;
     private int dir;
     private int curFloor; 
-//    private boolean occupied;
+    private int nextFloor;
+    private boolean occupied;
+    private OutPanel[] outPanels;
+
     private CabinButton[] buttons;
     private PriorityQueue<Request> upRqs;
     private PriorityQueue<Request> downRqs;
-
-
-    
-    
+ 
     public class Request implements Comparable<Request> {
     	int destination;
     	int status;
@@ -101,45 +99,58 @@ class Cabin {
     	}
     }
     
-    
-    public Cabin(int maxFloor, int cabinIndex) {
+    public Cabin(int maxFloor, int cabinIndex, OutPanel[] outPanels) {
 //        this.timeLag = 5;
         this.maxFloor = maxFloor;
         this.cabinIndex = cabinIndex;
         this.dir = STOP;
         this.curFloor = 0;
+        this.nextFloor = 0;
         this.buttons = new CabinButton[maxFloor];
 //        this.occupied = false;        
         this.upRqs = new PriorityQueue<Request>(); 
         this.downRqs = new PriorityQueue<Request>(); 
+        this.outPanels = outPanels;
         
         for (int i = 0; i < maxFloor; i++ ) {
             this.buttons[i] = new CabinButton(i);
         }
     }
- 
-//    private void wait(int timeLag) {
-//
-//    }
 
-    public void doRequest(Request rq) {
-    	/* Remove duplicate requests */
-    	if (rq.status == INREQ) {
-    		PriorityQueue<Request> rmQ = (rq.direction == UP) ? this.downRqs : this.upRqs;
-    		Iterator<Request> tempIter = rmQ.iterator();
-    		while (tempIter.hasNext()) {
-    			Request next = tempIter.next();
-    			if (next.requestID == rq.requestID) {
-    				upRqs.remove(next);
-    				break;
-    			}
-    		}
-    	}
-    	
-    	
+    public boolean ifOccupied() {
+    	return this.occupied;
     }
     
-
+    private void goToFloor() {
+    	return;
+    }
+    
+    private void clearRqs() {
+    	// Clear RQs from outside
+    	Iterator<Request> iter = ((this.dir == UP) ? this.upRqs : this.downRqs).iterator();
+    	while (iter.hasNext()) {
+    		Request temp = iter.next();
+    		if ((temp.destination == this.curFloor) && (temp.direction == this.dir)) {
+    			((this.dir == UP) ? this.upRqs : this.downRqs).remove(temp);
+    			buttons[temp.destination].respondTheButton();
+    			this.outPanels[this.curFloor].respondRequest(this.dir == UP);
+    			break;
+    		}
+    	}
+    }
+  
+    public int getNextFloor() {
+    	return this.nextFloor;
+    }
+    
+    public void doRequest(Request rq) {
+    	this.nextFloor = rq.destination;
+    	this.occupied = true;
+    	this.goToFloor();
+    	this.occupied = false;
+    	this.curFloor = this.nextFloor;
+    	this.clearRqs();
+    }
     
     public int floorDir(Request rq1) {
     	return (rq1.destination > curFloor) ? UP : ((rq1.destination == curFloor) ? STOP : DOWN);
@@ -214,7 +225,11 @@ class Cabin {
     	}
     }
     
-    public void requestFloorFromOutside(Request rq) {
+    public void requestFromOutside(int floor, int direction) {
+    	this.manageOutReq(new Request(floor, OUTREQ, direction, Cabin.fetchRqID()));
+    }
+    
+    private void manageOutReq(Request rq) {
     	switch (rq.direction) {
     	case UP:
     		Iterator<Request> upQueueIter = this.upRqs.iterator();
