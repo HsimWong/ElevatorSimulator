@@ -3,34 +3,42 @@ package EleControl;
 
 /*
  * The index of floor starts from 0
- * under any circumstance, exept for
+ * under any circumstance, except for
  * displaying.
  */
-class Button {
+public class Button {
     private boolean pressDownStatus;
-    // private int     cabinIndex;
+    
 
     public Button() {
         // this.cabinIndex = cabinIndex;
 		this.pressDownStatus = false;
     }
 
-    protected boolean getStatus() {
+    public boolean getStatus() {
         return this.pressDownStatus;
     }
+    
+    
+    
+    
 
     // @Override
-    protected void pressButton() {
+    public void pressButton() {
         this.pressDownStatus = true;
     }
 
     
-    protected void respondTheButton() {
+    public void respondTheButton() {
         this.pressDownStatus = false;
     }
 
     @Override
     public String toString(){
         return "hahahhaha";
+    }
+    
+    public static void main(String[] args) {
+//    	Button btn = new Button();
     }
 }

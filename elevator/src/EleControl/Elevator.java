@@ -3,7 +3,7 @@ package EleControl;
 //import OutPanel.OutPanel;
 //import java.util.*;
 
-class Elevator {
+public class Elevator {
 	public static final int UP = 1;
 	public static final int DOWN = -1;
 	public static final int STOP = 0;
@@ -12,7 +12,7 @@ class Elevator {
 	public static final int INFTY = 0xfffff;
 	
 
-	private Cabin[] cabins;
+	public Cabin[] cabins;
 	private OutPanel[] outPanels;
 //	private PanelStatus[][]
 
@@ -41,7 +41,7 @@ class Elevator {
 		return cabin.ifOccupied() ? cabin.getNextFloor() : cabin.getCurPos();
 	}
 		
-	public int dispatcher(int floorInd, int direction) {
+	private int dispatcher(int floorInd, int direction) {
 		int retCabinInd = 0;
 //		int[] status = new int[cabins.length];
 		if (direction == UP) {

@@ -13,13 +13,14 @@ import java.util.PriorityQueue;
  * REMEMBER TO ALTER THE DIR OF CABIN WHEN NO REQ R IN THE Q OF DIR 
  */
 
-class Cabin {
+public class Cabin {
 	public static final int ENDOFARRAY = 65535;
 	public static final int UP = 1;
 	public static final int DOWN = -1;
 	public static final int STOP = 0;
 	public static final int INREQ = 0;
 	public static final int OUTREQ = 1;
+	public static final int STOPCMPERROR = 0;
 	public static IntRef rqIDcount = new IntRef();
 	public synchronized static int fetchRqID() {
 		int ret = Cabin.rqIDcount.value;
@@ -29,8 +30,8 @@ class Cabin {
 	private int maxFloor;
 
     private int cabinIndex;
-    private int dir;
-    private int curFloor; 
+    public int dir;
+    public int curFloor; 
     private int nextFloor;
     private boolean occupied;
     private OutPanel[] outPanels;
@@ -65,10 +66,10 @@ class Cabin {
     		if (dir == UP) {
     			if (this.direction == UP && r.direction == UP) {
     				if ((this.destination - curFloor) >= 0 && (r.destination - curFloor) >= 0) {
-    					return this.destination >= r.destination ? 1 : -1;
+    					return this.destination < r.destination ? 1 : (this.destination == r.destination ? 0 : -1);
     					
     				} else if ((this.destination - curFloor) < 0 && (r.destination - curFloor) < 0) {
-    					return Math.abs(this.destination - curFloor) >= Math.abs(r.destination - curFloor) ? 1 : -1;
+    					return (Math.abs(this.destination - curFloor) >= Math.abs(r.destination - curFloor)) ? 1 : -1;
     					
     				} else if ((this.destination - curFloor) >= 0 && (r.destination - curFloor) < 0) {
     					return 1;
@@ -79,7 +80,8 @@ class Cabin {
     				return this.destination > r.destination ? 1 : -1;    				
     			}
     		} else if (dir == STOP) {
-    			return Math.abs(this.destination - curFloor) <= Math.abs(r.destination - curFloor) ? -1 : 1;
+    			return STOPCMPERROR; 
+//    			return Math.abs(this.destination - curFloor) <= Math.abs(r.destination - curFloor) ? -1 : 1;
     		} else { // dir = DOWN;
     			if (this.direction == UP) {
     				return this.destination < r.destination ? 1 : -1;
@@ -117,11 +119,17 @@ class Cabin {
         }
     }
 
-    public boolean ifOccupied() {
+    protected boolean ifOccupied() {
     	return this.occupied;
     }
     
     private void goToFloor() {
+    	try {
+			Thread.sleep(1000, 0);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     	return;
     }
     

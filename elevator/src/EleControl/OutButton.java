@@ -5,7 +5,7 @@ package EleControl;
  * under any circumstance, exept for
  * displaying.
  */
-class OutButton extends Button {
+public class OutButton extends Button {
     private int     pos;
     private boolean ifUp;
 
