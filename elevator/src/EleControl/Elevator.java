@@ -14,13 +14,14 @@ public class Elevator {
 
 	public Cabin[] cabins;
 	private OutPanel[] outPanels;
+//	private maxFloor;
 //	private PanelStatus[][]
 
 
 	public Elevator(int maxFloor, int cabinNum) {
 		this.cabins = new Cabin[cabinNum];
 		this.outPanels = new OutPanel[maxFloor];
-		
+//		this.maxFloor = maxFloor
 		/* create cabins */
 		for (int i = 0; i < cabinNum; i++) {
 			this.cabins[i] = new Cabin(maxFloor, i, outPanels);
@@ -75,6 +76,20 @@ public class Elevator {
 		}
 		
 		return retCabinInd;
+	}
+
+	private void run() {
+		while (true) {
+			int floor = (int)(Math.random() * this.outPanels.length);
+			makeRequestFromOut(floor, Math.random() > 0.5 ? 1 : -1);
+			try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
 	}
 }
 

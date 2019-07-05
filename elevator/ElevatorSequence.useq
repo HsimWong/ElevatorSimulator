@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="EleControl.Elevator" project="elevator" 
+    file="/elevator/src/EleControl/Elevator.java" binary="false" label="elevator" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="618" y="0"/>    
+    <execution id="2">      
+      <position height="4998" width="0" x="0" y="100"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="4926" width="0" x="0" y="148"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="4329" width="0" x="0" y="721"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="4239" width="0" x="0" y="787"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="24" width="7" x="52" y="1329"/>    
+    </execution>  
+  </object>  
+  <object id="19" language="java" name="EleControl.Cabin" project="elevator" file="/elevator/src/EleControl/Cabin.java" 
+    binary="false" label="cabin" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="210" width="0" x="0" y="216"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="3637" width="65" x="92" y="1365"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="957" width="65" x="92" y="1413"/>    
+    </execution>    
+    <execution id="33">      
+      <position height="701" width="0" x="0" y="1473"/>    
+    </execution>    
+    <execution id="35">      
+      <position height="24" width="0" x="0" y="2252"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="338" width="7" x="121" y="2434"/>    
+    </execution>    
+    <execution id="55">      
+      <position height="24" width="0" x="0" y="2558"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="2187" width="7" x="121" y="2791"/>    
+    </execution>    
+    <execution id="63">      
+      <position height="24" width="0" x="0" y="2947"/>    
+    </execution>    
+    <execution id="67">      
+      <position height="624" width="0" x="0" y="3128"/>    
+    </execution>    
+    <execution id="73">      
+      <position height="24" width="0" x="0" y="3967"/>    
+    </execution>    
+    <execution id="75">      
+      <position height="24" width="0" x="0" y="4068"/>    
+    </execution>    
+    <execution id="77">      
+      <position height="504" width="0" x="0" y="4265"/>    
+    </execution>    
+    <execution id="81">      
+      <position height="24" width="0" x="0" y="4894"/>    
+    </execution>    
+    <execution id="93">      
+      <position height="24" width="0" x="0" y="4325"/>    
+    </execution>    
+    <execution id="95">      
+      <position height="360" width="0" x="0" y="4385"/>    
+    </execution>    
+    <execution id="89">      
+      <position height="24" width="0" x="0" y="3644"/>    
+    </execution>    
+    <execution id="91">      
+      <position height="24" width="0" x="0" y="3704"/>    
+    </execution>    
+    <execution id="85">      
+      <position height="24" width="0" x="0" y="3188"/>    
+    </execution>    
+    <execution id="87">      
+      <position height="360" width="0" x="0" y="3248"/>    
+    </execution>  
+  </object>  
+  <object id="116" language="java" name="java.util.PriorityQueue" project="elevator" 
+    file="C:/Program Files/java-1.8.0-openjdk-1.8.0.212-3.b04.redhat.windows.x86_64/jre/lib/rt.jar" binary="true" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="107">      
+      <position height="24" width="0" x="0" y="3284"/>    
+    </execution>  
+  </object>  
+  <object id="117" language="java" name="java.util.PriorityQueue" project="elevator" 
+    file="C:/Program Files/java-1.8.0-openjdk-1.8.0.212-3.b04.redhat.windows.x86_64/jre/lib/rt.jar" binary="true" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="111">      
+      <position height="24" width="0" x="0" y="3464"/>    
+    </execution>  
+  </object>  
+  <object id="118" language="java" name="EleControl.CabinButton" project="elevator" 
+    file="/elevator/src/EleControl/CabinButton.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="113">      
+      <position height="24" width="0" x="0" y="3512"/>    
+    </execution>  
+  </object>  
+  <object id="119" language="java" name="EleControl.OutPanel" project="elevator" 
+    file="/elevator/src/EleControl/OutPanel.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="115">      
+      <position height="24" width="0" x="0" y="3560"/>    
+    </execution>  
+  </object>  
+  <object id="120" language="java" name="java.util.PriorityQueue" project="elevator" 
+    file="C:/Program Files/java-1.8.0-openjdk-1.8.0.212-3.b04.redhat.windows.x86_64/jre/lib/rt.jar" binary="true" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="97">      
+      <position height="24" width="0" x="0" y="4421"/>    
+    </execution>  
+  </object>  
+  <object id="121" language="java" name="java.util.Iterator" project="elevator" 
+    file="C:/Program Files/java-1.8.0-openjdk-1.8.0.212-3.b04.redhat.windows.x86_64/jre/lib/rt.jar" binary="true" 
+    label="iter" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="99">      
+      <position height="24" width="0" x="0" y="4511"/>    
+    </execution>    
+    <execution id="109">      
+      <position height="24" width="0" x="0" y="3374"/>    
+    </execution>  
+  </object>  
+  <object id="122" language="java" name="java.util.PriorityQueue" project="elevator" 
+    file="C:/Program Files/java-1.8.0-openjdk-1.8.0.212-3.b04.redhat.windows.x86_64/jre/lib/rt.jar" binary="true" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="101">      
+      <position height="24" width="0" x="0" y="4601"/>    
+    </execution>  
+  </object>  
+  <object id="123" language="java" name="EleControl.CabinButton" project="elevator" 
+    file="/elevator/src/EleControl/CabinButton.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="103">      
+      <position height="24" width="0" x="0" y="4649"/>    
+    </execution>  
+  </object>  
+  <object id="124" language="java" name="EleControl.OutPanel" project="elevator" 
+    file="/elevator/src/EleControl/OutPanel.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="105">      
+      <position height="24" width="0" x="0" y="4697"/>    
+    </execution>  
+  </object>  
+  <object id="125" language="java" name="EleControl.CabinButton" project="elevator" 
+    file="/elevator/src/EleControl/CabinButton.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="57">      
+      <position height="24" width="0" x="0" y="2628"/>    
+    </execution>  
+  </object>  
+  <object id="126" language="java" name="EleControl.Cabin.Request" project="elevator" 
+    file="/elevator/src/EleControl/Cabin.java" binary="false" label="request" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="59">      
+      <position height="24" width="0" x="0" y="2676"/>    
+    </execution>  
+  </object>  
+  <object id="127" language="java" name="java.util.PriorityQueue" project="elevator" 
+    file="C:/Program Files/java-1.8.0-openjdk-1.8.0.212-3.b04.redhat.windows.x86_64/jre/lib/rt.jar" binary="true" 
+    label="Q2bInserted" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="61">      
+      <position height="24" width="0" x="0" y="2724"/>    
+    </execution>  
+  </object>  
+  <object id="128" language="java" name="java.util.Iterator" project="elevator" 
+    file="C:/Program Files/java-1.8.0-openjdk-1.8.0.212-3.b04.redhat.windows.x86_64/jre/lib/rt.jar" binary="true" 
+    label="iterator" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="41">      
+      <position height="24" width="0" x="0" y="1631"/>    
+    </execution>  
+  </object>  
+  <object id="129" language="java" name="java.util.Iterator" project="elevator" 
+    file="C:/Program Files/java-1.8.0-openjdk-1.8.0.212-3.b04.redhat.windows.x86_64/jre/lib/rt.jar" binary="true" 
+    label="iterator1" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="49">      
+      <position height="24" width="0" x="0" y="1968"/>    
+    </execution>  
+  </object>  
+  <object id="130" language="java" name="EleControl.Cabin.Request" project="elevator" 
+    file="/elevator/src/EleControl/Cabin.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="37">      
+      <position height="24" width="0" x="0" y="2322"/>    
+    </execution>  
+  </object>  
+  <object id="131" language="java" name="java.util.PriorityQueue" project="elevator" 
+    file="C:/Program Files/java-1.8.0-openjdk-1.8.0.212-3.b04.redhat.windows.x86_64/jre/lib/rt.jar" binary="true" 
+    label="upRqs" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="21">      
+      <position height="24" width="0" x="0" y="240"/>    
+    </execution>    
+    <execution id="39">      
+      <position height="24" width="0" x="0" y="1541"/>    
+    </execution>    
+    <execution id="43">      
+      <position height="24" width="0" x="0" y="1721"/>    
+    </execution>    
+    <execution id="45">      
+      <position height="24" width="0" x="0" y="1789"/>    
+    </execution>    
+    <execution id="51">      
+      <position height="24" width="0" x="0" y="2058"/>    
+    </execution>    
+    <execution id="65">      
+      <position height="24" width="0" x="0" y="2983"/>    
+    </execution>    
+    <execution id="79">      
+      <position height="24" width="0" x="0" y="4781"/>    
+    </execution>  
+  </object>  
+  <object id="132" language="java" name="java.util.PriorityQueue" project="elevator" 
+    file="C:/Program Files/java-1.8.0-openjdk-1.8.0.212-3.b04.redhat.windows.x86_64/jre/lib/rt.jar" binary="true" 
+    label="downRqs" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="23">      
+      <position height="24" width="0" x="0" y="288"/>    
+    </execution>    
+    <execution id="47">      
+      <position height="24" width="0" x="0" y="1878"/>    
+    </execution>    
+    <execution id="53">      
+      <position height="24" width="0" x="0" y="2126"/>    
+    </execution>    
+    <execution id="69">      
+      <position height="24" width="0" x="0" y="3764"/>    
+    </execution>    
+    <execution id="71">      
+      <position height="24" width="0" x="0" y="3853"/>    
+    </execution>    
+    <execution id="83">      
+      <position height="24" width="0" x="0" y="4930"/>    
+    </execution>  
+  </object>  
+  <object id="133" language="java" name="EleControl.CabinButton" project="elevator" 
+    file="/elevator/src/EleControl/CabinButton.java" binary="false" label="cabinButton" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="25">      
+      <position height="24" width="0" x="0" y="378"/>    
+    </execution>  
+  </object>  
+  <object id="134" language="java" name="EleControl.OutPanel" project="elevator" 
+    file="/elevator/src/EleControl/OutPanel.java" binary="false" label="outPanel1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="119" width="0" x="0" y="502"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="470" width="89" x="585" y="811"/>    
+    </execution>  
+  </object>  
+  <object id="145" language="java" name="EleControl.OutButton" project="elevator" 
+    file="/elevator/src/EleControl/OutButton.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="138">      
+      <position height="24" width="0" x="0" y="924"/>    
+    </execution>  
+  </object>  
+  <object id="146" language="java" name="java.io.PrintStream" project="elevator" 
+    file="C:/Program Files/java-1.8.0-openjdk-1.8.0.212-3.b04.redhat.windows.x86_64/jre/lib/rt.jar" binary="true" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="140">      
+      <position height="24" width="0" x="0" y="1013"/>    
+    </execution>  
+  </object>  
+  <object id="147" language="java" name="EleControl.OutButton" project="elevator" 
+    file="/elevator/src/EleControl/OutButton.java" binary="false" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="142">      
+      <position height="24" width="0" x="0" y="1144"/>    
+    </execution>  
+  </object>  
+  <object id="148" language="java" name="java.io.PrintStream" project="elevator" 
+    file="C:/Program Files/java-1.8.0-openjdk-1.8.0.212-3.b04.redhat.windows.x86_64/jre/lib/rt.jar" binary="true" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="144">      
+      <position height="24" width="0" x="0" y="1233"/>    
+    </execution>  
+  </object>  
+  <object id="149" language="java" name="EleControl.OutButton" project="elevator" 
+    file="/elevator/src/EleControl/OutButton.java" binary="false" label="outButton" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="136">      
+      <position height="24" width="0" x="0" y="573"/>    
+    </execution>  
+  </object>  
+  <object id="150" language="java" name="EleControl.Cabin" project="elevator" file="/elevator/src/EleControl/Cabin.java" 
+    binary="false" label="cabin1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>  
+  </object>  
+  <combined-fragment id="151" interaction-operator="LOOP">    
+    <interaction-operand id="152" constraint="for:i &lt; cabinNum">      
+      <fragment refId="22"/>      
+      <fragment refId="153"/>      
+      <fragment refId="20"/>      
+      <fragment refId="5"/>    
+    </interaction-operand>    
+    <combined-fragment id="153" interaction-operator="LOOP">      
+      <interaction-operand id="154" constraint="for:i &lt; maxFloor">        
+        <fragment refId="24"/>      
+      </interaction-operand>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <combined-fragment id="155" interaction-operator="LOOP">    
+    <interaction-operand id="156" constraint="for:i &lt; maxFloor">      
+      <fragment refId="7"/>      
+      <fragment refId="157"/>    
+    </interaction-operand>    
+    <combined-fragment id="157" interaction-operator="ALT">      
+      <interaction-operand id="158" constraint="this.floorIndex == 0">        
+        <fragment refId="135"/>      
+      </interaction-operand>      
+      <interaction-operand id="159" constraint="else"/>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <combined-fragment id="160" interaction-operator="ALT">    
+    <interaction-operand id="161" constraint="dir">      
+      <fragment refId="162"/>    
+    </interaction-operand>    
+    <interaction-operand id="163" constraint="else">      
+      <fragment refId="164"/>    
+    </interaction-operand>    
+    <combined-fragment id="162" interaction-operator="ALT">      
+      <interaction-operand id="165" constraint="!(this.requestButtons[0] == null)">        
+        <fragment refId="137"/>      
+      </interaction-operand>      
+      <interaction-operand id="166" constraint="else">        
+        <fragment refId="139"/>      
+      </interaction-operand>    
+    </combined-fragment>    
+    <combined-fragment id="164" interaction-operator="ALT">      
+      <interaction-operand id="167" constraint="!(this.requestButtons[1] == null)">        
+        <fragment refId="141"/>      
+      </interaction-operand>      
+      <interaction-operand id="168" constraint="else">        
+        <fragment refId="143"/>      
+      </interaction-operand>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <combined-fragment id="169" interaction-operator="LOOP">    
+    <interaction-operand id="170">      
+      <fragment refId="26"/>      
+      <fragment refId="15"/>      
+      <fragment refId="13"/>      
+      <fragment refId="9"/>      
+      <fragment refId="36"/>      
+      <fragment refId="11"/>      
+      <fragment refId="171"/>      
+      <fragment refId="172"/>      
+      <fragment refId="32"/>      
+      <fragment refId="17"/>    
+    </interaction-operand>    
+    <combined-fragment id="171" interaction-operator="CRITICAL">      
+      <interaction-operand id="173">        
+        <fragment refId="34"/>      
+      </interaction-operand>    
+    </combined-fragment>    
+    <combined-fragment id="172" interaction-operator="ALT">      
+      <interaction-operand id="174" constraint="case UP:">        
+        <fragment refId="44"/>        
+        <fragment refId="38"/>        
+        <fragment refId="175"/>      
+      </interaction-operand>      
+      <interaction-operand id="176" constraint="case DOWN:">        
+        <fragment refId="52"/>        
+        <fragment refId="177"/>        
+        <fragment refId="46"/>      
+      </interaction-operand>      
+      <combined-fragment id="175" interaction-operator="LOOP">        
+        <interaction-operand id="178" constraint="while: upQueueIter.hasNext()">          
+          <fragment refId="179"/>          
+          <fragment refId="40"/>        
+        </interaction-operand>        
+        <combined-fragment id="179" interaction-operator="OPT">          
+          <interaction-operand id="180" constraint="rq.destination == next.destination">            
+            <fragment refId="42"/>          
+          </interaction-operand>        
+        </combined-fragment>      
+      </combined-fragment>      
+      <combined-fragment id="177" interaction-operator="LOOP">        
+        <interaction-operand id="181" constraint="while: downQueueIter.hasNext()">          
+          <fragment refId="182"/>          
+          <fragment refId="48"/>        
+        </interaction-operand>        
+        <combined-fragment id="182" interaction-operator="OPT">          
+          <interaction-operand id="183" constraint="rq.destination == next.destination">            
+            <fragment refId="50"/>          
+          </interaction-operand>        
+        </combined-fragment>      
+      </combined-fragment>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <combined-fragment id="184" interaction-operator="OPT">    
+    <interaction-operand id="185" 
+      constraint="(!this.buttons[floorIndex].getStatus())&#xd;    			|| !(this.curFloor == floorIndex)">      
+      <fragment refId="60"/>      
+      <fragment refId="186"/>      
+      <fragment refId="58"/>      
+      <fragment refId="56"/>    
+    </interaction-operand>    
+    <combined-fragment id="186" interaction-operator="CRITICAL">      
+      <interaction-operand id="187">        
+        <fragment refId="54"/>      
+      </interaction-operand>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <combined-fragment id="188" interaction-operator="ALT">    
+    <interaction-operand id="189" constraint="this.dir == STOP">      
+      <fragment refId="190"/>    
+    </interaction-operand>    
+    <interaction-operand id="191" constraint="else">      
+      <fragment refId="192"/>    
+    </interaction-operand>    
+    <combined-fragment id="190" interaction-operator="ALT">      
+      <interaction-operand id="193" constraint="this.upRqs.isEmpty() &amp;&amp; this.downRqs.isEmpty()"/>      
+      <interaction-operand id="194" constraint="else">        
+        <fragment refId="195"/>      
+      </interaction-operand>      
+      <combined-fragment id="195" interaction-operator="ALT">        
+        <interaction-operand id="196" constraint="! this.upRqs.isEmpty()">          
+          <fragment refId="62"/>          
+          <fragment refId="64"/>        
+        </interaction-operand>        
+        <interaction-operand id="197" constraint="else">          
+          <fragment refId="198"/>        
+        </interaction-operand>        
+        <combined-fragment id="198" interaction-operator="ALT">          
+          <interaction-operand id="199" constraint="! this.downRqs.isEmpty()">            
+            <fragment refId="66"/>            
+            <fragment refId="200"/>            
+            <fragment refId="84"/>            
+            <fragment refId="88"/>            
+            <fragment refId="68"/>            
+            <fragment refId="86"/>            
+            <fragment refId="90"/>            
+            <fragment refId="106"/>          
+          </interaction-operand>          
+          <interaction-operand id="201" constraint="else">            
+            <fragment refId="70"/>            
+            <fragment refId="202"/>          
+          </interaction-operand>          
+          <combined-fragment id="202" interaction-operator="ALT">            
+            <interaction-operand id="203" constraint="this.floorDir(downR) == DOWN || this.floorDir(downR) == STOP">              
+              <fragment refId="72"/>            
+            </interaction-operand>            
+            <interaction-operand id="204" constraint="else">              
+              <fragment refId="74"/>            
+            </interaction-operand>          
+          </combined-fragment>          
+          <combined-fragment id="200" interaction-operator="LOOP">            
+            <interaction-operand id="205" constraint="while: iter.hasNext()">              
+              <fragment refId="206"/>              
+              <fragment refId="108"/>            
+            </interaction-operand>            
+            <combined-fragment id="206" interaction-operator="OPT">              
+              <interaction-operand id="207" 
+                constraint="(temp.destination == this.curFloor) &amp;&amp; (temp.direction == this.dir)">                
+                <fragment refId="112"/>                
+                <fragment refId="114"/>                
+                <fragment refId="110"/>              
+              </interaction-operand>            
+            </combined-fragment>          
+          </combined-fragment>        
+        </combined-fragment>      
+      </combined-fragment>    
+    </combined-fragment>    
+    <combined-fragment id="192" interaction-operator="ALT">      
+      <interaction-operand id="208" constraint="this.dir == UP">        
+        <fragment refId="94"/>        
+        <fragment refId="78"/>        
+        <fragment refId="96"/>        
+        <fragment refId="76"/>        
+        <fragment refId="209"/>        
+        <fragment refId="92"/>      
+      </interaction-operand>      
+      <interaction-operand id="210" constraint="else">        
+        <fragment refId="80"/>        
+        <fragment refId="82"/>      
+      </interaction-operand>      
+      <combined-fragment id="209" interaction-operator="LOOP">        
+        <interaction-operand id="211" constraint="while: iter.hasNext()">          
+          <fragment refId="212"/>          
+          <fragment refId="98"/>        
+        </interaction-operand>        
+        <combined-fragment id="212" interaction-operator="OPT">          
+          <interaction-operand id="213" 
+            constraint="(temp.destination == this.curFloor) &amp;&amp; (temp.direction == this.dir)">            
+            <fragment refId="102"/>            
+            <fragment refId="100"/>            
+            <fragment refId="104"/>          
+          </interaction-operand>        
+        </combined-fragment>      
+      </combined-fragment>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <message id="3" operation="Elevator(int,int)" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="Cabin(int,int,EleControl.OutPanel[])" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="OutPanel(int,boolean)" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="run():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="makeRequestFromOut(int,int):void" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="makeRequest(boolean):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="dispatcher(int,int):int" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="17" asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="20" operation="PriorityQueue()" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="PriorityQueue()" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="CabinButton(int)" asynchronous="false">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="requestFromOutside(int,int):void" asynchronous="false">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="requestFloorFromInside(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="doNext():void" asynchronous="false">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="32" operation="manageOutReq(EleControl.Cabin.Request):void" asynchronous="false">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>  
+  <message id="34" operation="fetchRqID():int" asynchronous="false">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="35"/>  
+  </message>  
+  <message id="36" operation="Request(int,int,int,int)" asynchronous="false">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="37"/>  
+  </message>  
+  <message id="38" operation="iterator():java.util.Iterator&lt;E&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="39"/>  
+  </message>  
+  <message id="40" operation="next():E" asynchronous="false">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="41"/>  
+  </message>  
+  <message id="42" operation="remove(java.lang.Object):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="43"/>  
+  </message>  
+  <message id="44" operation="add(E):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="45"/>  
+  </message>  
+  <message id="46" operation="iterator():java.util.Iterator&lt;E&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="47"/>  
+  </message>  
+  <message id="48" operation="next():E" asynchronous="false">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="49"/>  
+  </message>  
+  <message id="50" operation="remove(java.lang.Object):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="51"/>  
+  </message>  
+  <message id="52" operation="add(E):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="53"/>  
+  </message>  
+  <message id="54" operation="fetchRqID():int" asynchronous="false">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="55"/>  
+  </message>  
+  <message id="56" operation="pressButton():void" asynchronous="false">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="57"/>  
+  </message>  
+  <message id="58" operation="Request(int,int,int,int)" asynchronous="false">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="59"/>  
+  </message>  
+  <message id="60" operation="add(E):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="61"/>  
+  </message>  
+  <message id="62" operation="doRequest(EleControl.Cabin.Request):void" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="63"/>  
+  </message>  
+  <message id="64" operation="poll():E" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="65"/>  
+  </message>  
+  <message id="66" operation="doRequest(EleControl.Cabin.Request):void" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="67"/>  
+  </message>  
+  <message id="68" operation="poll():E" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="69"/>  
+  </message>  
+  <message id="70" operation="peek():E" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="71"/>  
+  </message>  
+  <message id="72" operation="doNext():void" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="73"/>  
+  </message>  
+  <message id="74" operation="doNext():void" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="75"/>  
+  </message>  
+  <message id="76" operation="doRequest(EleControl.Cabin.Request):void" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="77"/>  
+  </message>  
+  <message id="78" operation="poll():E" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="79"/>  
+  </message>  
+  <message id="80" operation="doRequest(EleControl.Cabin.Request):void" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="81"/>  
+  </message>  
+  <message id="82" operation="poll():E" asynchronous="false">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="83"/>  
+  </message>  
+  <message id="84" operation="goToFloor():void" asynchronous="false">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="85"/>  
+  </message>  
+  <message id="86" operation="clearRqs():void" asynchronous="false">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="87"/>  
+  </message>  
+  <message id="88" operation="goToFloor():void" asynchronous="false">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="89"/>  
+  </message>  
+  <message id="90" operation="clearRqs():void" asynchronous="false">    
+    <end type="SOURCE" refId="67"/>    
+    <end type="TARGET" refId="91"/>  
+  </message>  
+  <message id="92" operation="goToFloor():void" asynchronous="false">    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="93"/>  
+  </message>  
+  <message id="94" operation="clearRqs():void" asynchronous="false">    
+    <end type="SOURCE" refId="77"/>    
+    <end type="TARGET" refId="95"/>  
+  </message>  
+  <message id="96" operation="iterator():java.util.Iterator&lt;E&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="95"/>    
+    <end type="TARGET" refId="97"/>  
+  </message>  
+  <message id="98" operation="next():E" asynchronous="false">    
+    <end type="SOURCE" refId="95"/>    
+    <end type="TARGET" refId="99"/>  
+  </message>  
+  <message id="100" operation="remove(java.lang.Object):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="95"/>    
+    <end type="TARGET" refId="101"/>  
+  </message>  
+  <message id="102" operation="respondTheButton():void" asynchronous="false">    
+    <end type="SOURCE" refId="95"/>    
+    <end type="TARGET" refId="103"/>  
+  </message>  
+  <message id="104" operation="respondRequest(boolean):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="95"/>    
+    <end type="TARGET" refId="105"/>  
+  </message>  
+  <message id="106" operation="iterator():java.util.Iterator&lt;E&gt;" asynchronous="false">    
+    <end type="SOURCE" refId="87"/>    
+    <end type="TARGET" refId="107"/>  
+  </message>  
+  <message id="108" operation="next():E" asynchronous="false">    
+    <end type="SOURCE" refId="87"/>    
+    <end type="TARGET" refId="109"/>  
+  </message>  
+  <message id="110" operation="remove(java.lang.Object):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="87"/>    
+    <end type="TARGET" refId="111"/>  
+  </message>  
+  <message id="112" operation="respondTheButton():void" asynchronous="false">    
+    <end type="SOURCE" refId="87"/>    
+    <end type="TARGET" refId="113"/>  
+  </message>  
+  <message id="114" operation="respondRequest(boolean):boolean" asynchronous="false">    
+    <end type="SOURCE" refId="87"/>    
+    <end type="TARGET" refId="115"/>  
+  </message>  
+  <message id="135" operation="OutButton(int,boolean)" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="136"/>  
+  </message>  
+  <message id="137" operation="pressButton():void" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="138"/>  
+  </message>  
+  <message id="139" operation="println(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="140"/>  
+  </message>  
+  <message id="141" operation="pressButton():void" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="142"/>  
+  </message>  
+  <message id="143" operation="println(java.lang.String):void" asynchronous="false">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="144"/>  
+  </message>
+</sequence-diagram>
